@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Button to view Analytics Dashboard -->
+    <Button
+        android:id="@+id/btnViewNumberOfUsers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Number Of Users"/>
+    <Button
+        android:id="@+id/btnMonitorFeedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Monitor Feedback"/>
+
+
+    <!-- Button to view Number of Users -->
+
+    <!-- Button to view User Preferences -->
+
+
+    <Button
+        android:id="@+id/btnProvideAnnouncments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Make Special Announcements" />
+
+
+</LinearLayout>

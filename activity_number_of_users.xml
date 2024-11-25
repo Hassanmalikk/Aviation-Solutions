@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- TextView to display the number of users and their statistics -->
+    <TextView
+        android:id="@+id/tvNumberOfUsers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Users: "
+        android:textSize="18sp"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Spinner for sorting users -->
+    <Spinner
+        android:id="@+id/spinnerSort"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/tvNumberOfUsers"
+        android:layout_marginBottom="20dp"
+        android:padding="12dp" />
+
+    <!-- RecyclerView to display users list -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/spinnerSort"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"/>
+
+</RelativeLayout>
