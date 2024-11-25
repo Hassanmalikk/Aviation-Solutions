@@ -42,7 +42,7 @@ public class EmailHelper extends AppCompatActivity {
     // Use Gmail SEND scope to send emails
     private static final List<String> SCOPES = Collections.singletonList("https://www.googleapis.com/auth/gmail.send");
 
-    private static final String CREDENTIALS_FILE_PATH = "/credentials.json";
+    private static final String CREDENTIALS_FILE_PATH = "/res/raw/credentials.json";
 
     /**
      * Creates an authorized Credential object.
