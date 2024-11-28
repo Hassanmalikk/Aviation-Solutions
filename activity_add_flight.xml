@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".AddFlightActivity">
+
+    <EditText
+        android:id="@+id/flightNumberEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Flight Number"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/airlineEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Airline"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/originEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Origin"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/destinationEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Destination"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/departureDateEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:hint="Departure Date (DD-MM-YYYY)"
+
+        android:inputType="none" />
+
+    <EditText
+        android:id="@+id/departureTimeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Departure Time(HH:MM)"
+        android:inputType="time" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Flight" />
+
+</LinearLayout>
