@@ -12,9 +12,6 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-import java.security.GeneralSecurityException;
-
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -101,6 +98,7 @@ public class AnnouncementsActivity extends AppCompatActivity {
                 e.printStackTrace();  // Handle exception properly
             }
         }
+         Toast.makeText(this, "Emails are being sent.", Toast.LENGTH_SHORT).show();
 
         // Save the announcement in Firebase Database
         String timestamp = String.valueOf(System.currentTimeMillis());
@@ -109,3 +107,4 @@ public class AnnouncementsActivity extends AppCompatActivity {
 
     }
 }
+
