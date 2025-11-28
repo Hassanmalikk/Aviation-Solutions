@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome, User"
+    android:textSize="18sp"
+    android:layout_margin="16dp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/search_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:background="@android:drawable/edit_text"
+            android:padding="8dp"
+            app:queryHint="Search Flights and Airlines"
+            app:iconifiedByDefault="false"/>
+
+
+        <ImageView
+            android:id="@+id/filterIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/icfilter"
+            android:contentDescription="Filter"
+            android:padding="10dp"/>
+    </RelativeLayout>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"/>
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/enterFlight_Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Enter Your Flight"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/viewFlightStatus_Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="View Flight Status"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"/>
+
+    <Button
+        android:id="@+id/TripHistory_Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="View Your Trips"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/setReminder_Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Set Personalized Flight Reminders"/>
+
+    <Button
+        android:id="@+id/flightnavigation_Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="View Map"/>
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"/>
+
+    <ListView
+        android:id="@+id/list_View"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="1dp"
+        android:divider="@android:color/darker_gray"
+        android:visibility="gone"/>
+</LinearLayout>
