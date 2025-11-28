@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_marginBottom="10dp">
+
+<TextView
+android:id="@+id/dateTimeView"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="DateTime"
+android:textStyle="bold"/>
+
+<TextView
+android:id="@+id/userEmailView"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="User Email"/>
+
+<TextView
+android:id="@+id/feedbackMessageView"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Feedback Message"/>
+</LinearLayout>
